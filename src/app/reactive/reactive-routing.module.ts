@@ -8,10 +8,10 @@ const routes: Routes = [
   {
     path: "",
     children: [
-      { path: "reactivebasicos", component: BasicosComponent},
-      { path: "reactivedinamicos", component: DinamicosComponent},
-      { path: "reactiveswitches", component: SwitchesComponent},
-      { path: "**", redirectTo: 'reactivebasicos', pathMatch:'full'}
+      { path: "basicos", component: BasicosComponent},
+      { path: "dinamicos", component: DinamicosComponent},
+      { path: "switches", component: SwitchesComponent},
+      { path: "**", redirectTo: 'basicos', pathMatch:'full'}
     ]
   }
 ];

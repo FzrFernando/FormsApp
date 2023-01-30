@@ -9,11 +9,11 @@ const routes: Routes = [
   {
     path: "",
     children: [
-      { path: "templatebasicos", component: BasicosComponent},
-      { path: "templatedinamicos", component: DinamicosComponent},
-      { path: "templatedirectives", component: DirectivesComponent},
-      { path: "templateswitches", component: SwitchesComponent},
-      { path: "**", redirectTo: 'templatebasicos', pathMatch:'full' }
+      { path: "basicos", component: BasicosComponent},
+      { path: "dinamicos", component: DinamicosComponent},
+      { path: "directives", component: DirectivesComponent},
+      { path: "switches", component: SwitchesComponent},
+      { path: "**", redirectTo: 'basicos', pathMatch:'full' }
     ]
   }
 ];
