@@ -26,8 +26,8 @@
         <div class="col-sm-9">
             <div class="input-group">
                 <input class="form-control"
-                        placeholder="Agregar favorito" [(ngModel)]="favorito.nombre" name="favorito_{{i}}">
-                <button class="btn btn-outline-primary" (click)="add(i)" type="button">Agregar</button>
+                        placeholder="Agregar favorito" [(ngModel)]="newFavorite" name="favorito">
+                <button class="btn btn-outline-primary" (click)="addFavorite()" type="button">Agregar</button>
             </div>
         </div>
     </div>
