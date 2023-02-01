@@ -5,7 +5,8 @@ import { ReactiveRoutingModule } from './reactive-routing.module';
 import { BasicosComponent } from './basicos/basicos.component';
 import { DinamicosComponent } from './dinamicos/dinamicos.component';
 import { SwitchesComponent } from './switches/switches.component';
-import { SharedModule } from '../shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -17,12 +18,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     ReactiveRoutingModule,
-    SharedModule
-  ],
-  exports: [
-    BasicosComponent,
-    DinamicosComponent,
-    SwitchesComponent
+    ReactiveFormsModule
   ]
 })
 export class ReactiveModule { }
